@@ -1,10 +1,12 @@
 import React from "react"
+import {PageContainer} from "common/styled";
+
 class Mine extends React.Component {
     render(){
         return(
-            <div>
+            <PageContainer>
                 Mine
-            </div>
+            </PageContainer>
         )
     }
 }

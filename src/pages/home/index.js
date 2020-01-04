@@ -1,10 +1,11 @@
 import React from "react"
+import {PageContainer} from "common/styled";
 class Home extends React.Component {
     render(){
         return(
-            <div>
+            <PageContainer>
                 Home
-            </div>
+            </PageContainer>
         )
     }
 }

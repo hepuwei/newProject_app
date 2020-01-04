@@ -1,4 +1,4 @@
-const { override, fixBabelImports, addWebpackAlias } = require('customize-cra');
+const { override, fixBabelImports, addWebpackAlias, addDecoratorsLegacy } = require('customize-cra');
 const path = require("path")
 module.exports = override(
   //按需加载
@@ -20,4 +20,5 @@ module.exports = override(
     "static": path.join(__dirname, "./src/static"),
     "utils": path.join(__dirname, "./src/utils"),
   }),
+  addDecoratorsLegacy()
 );
